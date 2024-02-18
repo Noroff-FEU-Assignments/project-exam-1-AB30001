@@ -1,0 +1,81 @@
+/* Slider Essentials */
+
+  
+  .product {
+    position: relative; 
+    width: 100%; 
+  }
+  
+  .product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    position: relative; 
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product-category {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  //* Navigation Buttons */
+
+  
+  .pre-btn, .nxt-btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pre-btn {
+   transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    
+  }
+  
+  
+  
+ 
+  
+  .pre-btn:hover, .nxt-btn:hover {
+    background-color: rgba(0, 0, 0, 0.75); 
+  }
+  
+  .pre-btn:hover img, .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  /* Hide Scrollbar */
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
